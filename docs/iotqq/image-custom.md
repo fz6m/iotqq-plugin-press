@@ -69,7 +69,7 @@ sidebar: auto
     2. 三个一样：表情包自己的文件夹名、表情文件名、配置文件内 `name` 属性值，三个地方应该保持一致。
 3. 为了更好的选定配置 `config.ini` 内的参数取值，一种参考图如下：
    
-    <img src='https://raw.githubusercontent.com/fz6m/Private-picgo/moe/img/20200512173354.jpg' width='70%'/>
+    <img :src="$withBase('/image-custom-example.jpg')" class="my-img" width='70%' />
 
     注：看不了图说明 DNS 被污染了，请配置 [Github Hosts](https://blog.csdn.net/qq_21567385/article/details/105951488) 或者开启代理。
 4. 在画图工具内编辑图片，可以在左下角看到鼠标相应的像素点与图片尺寸，比划一下，我们就可以这样得到（这只是一个例子）：
