@@ -1,0 +1,17 @@
+{
+  "name": "iotqq-plugin-press",
+  "version": "1.0.0",
+  "description": "Description document",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "author": "fz6m",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.4.1",
+    "vuepress": "^1.4.1",
+    "vuepress-plugin-zooming": "^1.1.7"
+  }
+}
