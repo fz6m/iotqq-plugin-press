@@ -32,7 +32,8 @@ module.exports = {
           text: '插件说明',
           items: [
             { text: '自定义表情包', link: '/iotqq/image-custom' },
-            { text: '关注早晚安', link: '/iotqq/good-morning' }
+            { text: '关注早晚安', link: '/iotqq/good-morning' },
+            { text: 'Vtuber 运势', link: '/iotqq/vtuber-fortune' }
           ]
         },
         { text: '其他', link: '/other/other' },

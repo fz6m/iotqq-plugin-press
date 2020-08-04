@@ -31,7 +31,7 @@ bot_qq = 12345678
 
 ## 自定义化
 ### 触发关键词
-触发 早晚安 为完全匹配（防止不必要的消息），相关触发命令可在 `plugins/bot_image_goodmorning.py` 文件开头找到如下代码：
+触发 早晚安 为完全匹配（防止不必要的消息），相关触发命令可在 `plugins/bot_good_morning.py` 文件开头找到如下代码：
 ```python
     # 早安指令
     goodMorningInstructionSet = ['早', '早安', '哦哈哟', 'ohayo', 'ohayou', '早安啊', '早啊', '早上好']
@@ -42,7 +42,7 @@ bot_qq = 12345678
 ### 其他配置
 一般情况下，并不需要自定义这部分的配置，所以没有抽取相应的配置文件，如果需要，请按如下方式寻找：
 
-文件：`plugins/bot_image_goodmorning.py`
+文件：`plugins/bot_good_morning.py`
 单位：小时
 
 ```python
