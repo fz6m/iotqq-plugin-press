@@ -59,6 +59,9 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 ```
 注：如果因为各种原因切换失败，请自行百度寻找其他切换至 root 的方法。
 
+### 中断程序
+在进程中，可以使用 `ctrl+c` 中断当前进程，小白不知道怎么退出就这么按。
+
 ## 部署机器人
 
 ### 上传运行包
@@ -147,12 +150,13 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
    ```
 
 ### 安装依赖
-如果你是 ubuntu ，请使用如下方式安装依赖：
+#### ubuntu
+请使用如下方式安装依赖：
 ```bash
     /www/server/panel/pyenv/bin/pip3 install 包名
 ```
-
-如果你是 centos ，我们刚刚使用 pyenv 已经切换好了全局 python 版本，你可以确认：
+#### centos
+我们刚刚使用 pyenv 已经切换好了全局 python 版本，你可以确认：
 ```bash
     python --version
 ```
