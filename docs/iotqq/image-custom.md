@@ -27,6 +27,12 @@ sidebar: auto
     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple pillow
 ```
 
+### 添加账号
+在下载的 `bot.py` 主程序内，你需要修改 `bot_qq` 为自己的机器人账号：
+```python
+bot_qq = 12345678
+```
+
 ### 使用方法
 在群内可以使用如下指令：
 ```yml

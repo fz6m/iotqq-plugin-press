@@ -20,6 +20,12 @@ sidebar: auto
     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple python-dateutil
 ```
 
+### 添加账号
+在下载的 `bot.py` 主程序内，你需要修改 `bot_qq` 为自己的机器人账号：
+```python
+bot_qq = 12345678
+```
+
 ## 开始使用
 当有群友在群内发送与 早晚安 相关的消息时，就会自动登记并统计工作 / 睡眠的时间（如果有）。
 
@@ -59,3 +65,14 @@ if soberTime < 24:
 * 晚安排名：每天 `12:00` 重置排名
 
 注：考虑到修仙，假如 `00:00` 点过后再 晚安 ，依然参与前一天的晚安排名。
+
+## 其他
+
+您可以安装 `ujson` 依赖以加速 json 读取的速度：
+```bash
+    pip install ujson
+```
+注：如果安装 `ujson` 依赖失败，你可以放弃安装，从而会自动使用已有 `json` 库代替 `ujson` （性能较低），你也可以在 [这里](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ujson) 下载对应你 `python` 版本和位数的 `ujson` 安装包，之后执行本地安装即可：
+```sh
+    pip install 本地 ujson 安装包(.whl)路径
+```
