@@ -1,5 +1,6 @@
 ---
 sidebar: auto
+prev: /guide/guide
 ---
 
 # 了解基础

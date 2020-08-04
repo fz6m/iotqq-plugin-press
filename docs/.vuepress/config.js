@@ -26,6 +26,7 @@ module.exports = {
       sidebar: 'auto',
       nav: [
         { text: '主页', link: '/' },
+        { text: '从零开始', link: '/guide/manual' },
         { text: '了解基础', link: '/guide/guide' },
         {
           text: '插件说明',
