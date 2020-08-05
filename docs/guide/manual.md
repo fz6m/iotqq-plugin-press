@@ -264,8 +264,9 @@ centos 运行：
 ## 学到更多
 
 ### tmux 管理进程
-如果使用 `nohup` 有时机器人进程会被服务器自动杀掉的话，可以使用 `tmux` 进行多窗口隔离管理。
+如果使用 `nohup` 出现问题，可以使用 `tmux` 进行多窗口隔离管理。
 
 现在你已经是一个熟练的 linux 使用者了，请自行百度学习。
 
 推荐：[阮一峰 Tmux 使用教程](http://www.ruanyifeng.com/blog/2019/10/tmux.html)
+
