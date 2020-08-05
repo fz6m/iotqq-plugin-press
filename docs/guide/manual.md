@@ -270,3 +270,28 @@ centos 运行：
 
 推荐：[阮一峰 Tmux 使用教程](http://www.ruanyifeng.com/blog/2019/10/tmux.html)
 
+### 使用 docker
+#### 基础镜像
+在使用之前先构建一个基础镜像环境 `Dockerfile` ：
+```yml
+    FROM ubuntu
+
+    RUN apt-get update && apt-get install -y wget
+```
+构建：
+```bash
+    docker build --no-cache -t iotqq:base .
+```
+
+#### 运行
+将你本地机器人目录挂载到容器里即可：
+```bash
+    docker run \
+        -v /iotqq/iotbot_3.0.6_linux_amd64:/iot \
+        --name iotqq \
+        -w /iot \
+        -p 8888:8888 \
+        -d iotqq:base \
+        ./iotbot
+```
+
