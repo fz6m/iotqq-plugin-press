@@ -1,1 +1,1 @@
-[iotqq-plugin](https://github.com/fz6m/iotqq-plugin) 的使用说明
+[opqqq-plugin](https://github.com/fz6m/opqqq-plugin) 的使用说明

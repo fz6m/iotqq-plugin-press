@@ -5,7 +5,11 @@ prev: /guide/manual
 
 # 了解基础
 
-本项目插件基于 iotqq 和 python--iotbot SDK 开发，使用前确保该基础依赖已经安装；
+::: tip 提示
+由于 iotbot 更名为 opqbot，下文中提到的 opq 均与 iot 等同。
+:::
+
+本项目插件基于 opqqq 和 python--iotbot SDK 开发，使用前确保该基础依赖已经安装；
 ```bash
     pip install git+https://github.com/xiyaowong/python-iotbot.git@master
 ```
@@ -13,7 +17,7 @@ prev: /guide/manual
 
 ## 项目地址
 
-iotqq：[IOTQQ / IOTQQ](https://github.com/IOTQQ/IOTQQ)
+opqqq：[OPQBOT / OPQ](https://github.com/OPQBOT/OPQ)
 
 python--iotbot：[xiyaowong / python--iotbot](https://github.com/xiyaowong/python--iotbot)
 

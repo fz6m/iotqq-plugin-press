@@ -1,7 +1,7 @@
 module.exports = {
-    base: '/iotqq-plugin-press/',
-    title: 'iotqq-plugin',
-    description: '基于 iotqq 的插件使用说明',
+    base: '/opqqq-plugin-press/',
+    title: 'opqqq-plugin',
+    description: '基于 opqqq 的插件使用说明',
     port: 9527,
     head: [
       [
@@ -38,7 +38,7 @@ module.exports = {
           ]
         },
         { text: '其他', link: '/other/other' },
-        { text: 'GitHub', link: 'https://github.com/fz6m/iotqq-plugin' }
+        { text: 'GitHub', link: 'https://github.com/fz6m/opqqq-plugin' }
       ],
       lastUpdated: '上次更新',
       smoothScroll: true,
