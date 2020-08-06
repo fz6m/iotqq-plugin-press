@@ -6,17 +6,18 @@ next: /guide/guide
 # 从零开始
 
 ::: tip 提示
-由于 iotbot 更名为 opqbot，下文中提到的 iot 均与 opq 等同。
+由于 iotbot 更名为 opqbot，下文中提到的 opq 均与 iot 等同。
 :::
 
 ## 下载运行包
 
-你可以从 iotqq 的官方群或 gitter.im 的 [iot](https://gitter.im/IOTQQTalk/IOTQQ) 群组等渠道获取下载安装包，这里建议使用 amd64 在 ubuntu 上运行。
+你可以从 [OPQ](https://github.com/OPQBOT/OPQ) 官方项目等渠道获取下载安装包，这里建议使用 amd64 在 ubuntu 上运行。
 
 注： windows 运行包存在一些问题，在 windows server 2012 上如果没有开通虚拟 linux 环境权限（学生机无法开通），是运行不了的。所以建议使用 linux 系列运行包。
 
 附：
- - 最新版 iot 运行包（不一定实时更新）：[iotbot_3.0.6_linux_amd64.tar.gz](https://files.gitter.im/5e887cf2d73408ce4fdf42c5/97r6/iotbot_3.0.6_linux_amd64.tar.gz)
+ - 最新版 opq 运行包（不一定实时更新）：[OPQBot_3.0.8_linux_amd64.tar.gz](https://files.gitter.im/5f27939ed73408ce4feb3112/ygKm/OPQBot_3.0.8_linux_amd64.tar.gz)
+ - 树莓派版本请自行寻找。
 
 ## 安装管理面板
 
@@ -67,7 +68,7 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 ### 上传运行包
 
 #### 创建文件夹
-通过 宝塔面板 > 文件 上传刚刚下载的运行包到服务器，这里假设上传到 `/root/iotqq` 这个文件夹内：
+通过 宝塔面板 > 文件 上传刚刚下载的运行包到服务器，这里假设上传到 `/root/opqqq` 这个文件夹内：
 
 <img :src="$withBase('/manual/makedir.jpg')" class="my-img" />
 
@@ -107,14 +108,14 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 
 先切换到该目录内：
 ```bash
-    cd ~/iotqq/iotbot_3.0.6_linux_amd64
+    cd ~/opqqq/OPQBot_3.0.8_linux_amd64
 ```
 注：后半部分请根据你解压后的文件名切换，这只是一个例子。
 
 #### 试运行
 运行机器人：
 ```bash
-    ./iotbot
+    ./OPQBot
 ```
 看到 everything 成功即可进行登录。
 
@@ -128,7 +129,7 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 
 确认无误后，你可以通过 `nohup` 后台方式运行机器人：
 ```bash
-    nohup ./iotbot &
+    nohup ./OPQBot &
 ```
 会在当前程序目录自动产生一个 `nohup.out` 日志文件，有关日志查看，请看后文介绍。
 
@@ -280,18 +281,31 @@ centos 运行：
 ```
 构建：
 ```bash
-    docker build --no-cache -t iotqq:base .
+    docker build --no-cache -t opqqq:base .
 ```
 
 #### 运行
 将你本地机器人目录挂载到容器里即可：
 ```bash
     docker run \
-        -v /iotqq/iotbot_3.0.6_linux_amd64:/iot \
-        --name iotqq \
-        -w /iot \
+        -v /opqqq/OPQBot_3.0.8_linux_amd64:/opq \
+        --name opqqq \
+        -w /opq \
         -p 8888:8888 \
-        -d iotqq:base \
-        ./iotbot
+        -d opqqq:base \
+        ./OPQBot
+```
+
+#### 内存监控
+```bash
+    # 找到 pid
+    ps aux | grep OPQBot
+    # 监控
+    top -d 2 -p <pid>
+```
+
+#### 日志监控
+```bash
+    docker logs -tf opqqq --tail 20
 ```
 
