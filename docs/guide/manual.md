@@ -11,9 +11,9 @@ next: /guide/guide
 
 ## 下载运行包
 
-你可以从 [OPQ](https://github.com/OPQBOT/OPQ) 官方项目等渠道获取下载安装包，这里建议使用 amd64 在 ubuntu 上运行。
+你可以从 [OPQ](https://github.com/OPQBOT/OPQ) 官方项目等渠道获取下载安装包，这里建议使用 amd64 在 ubuntu 上运行（或者 centos ）。
 
-注： windows 运行包存在一些问题，在 windows server 2012 上如果没有开通虚拟 linux 环境权限（学生机无法开通），是运行不了的。所以建议使用 linux 系列运行包。
+注： windows 不能使用本插件。
 
 附：
  - 最新版 opq 运行包（不一定实时更新）：[OPQBot_3.0.8_linux_amd64.tar.gz](https://files.gitter.im/5f27939ed73408ce4feb3112/ygKm/OPQBot_3.0.8_linux_amd64.tar.gz)
