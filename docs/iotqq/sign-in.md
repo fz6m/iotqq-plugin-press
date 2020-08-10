@@ -77,14 +77,14 @@ sidebar: auto
 你可以借此屏蔽掉政治色彩强烈的一言，给予群友更好的体验。
 
 #### 默认一言
-你可以在 `plugins/bot_sign_in.py` 的第 17 行找到一言开关：
+你可以在 `plugins/bot_sign_in.py` 的第 17 行找到默认一言：
 ```python
     noHitokoto = '今天也要元气满满哦~'
 ```
 以下几种情况将采用默认一言：
 
  * 当一言功能关闭时
- * 当第两次获取一言都在黑名单时
+ * 当两次获取一言都在黑名单时
  * 当网络超时或一言网站倒闭，同时调取本地存档失败时
 
 ### 出图设定
@@ -105,12 +105,12 @@ sidebar: auto
 `avatarVerticalOffset`|  `50`         |  头像在 `y/2` 位置向上额外偏移的值
 `textBaseMapSize`     |  `(540, 160)` |  文字区域 `(0, 0, 0, 190)` 颜色的尺寸大小
 `topPositionOfTextBaseMap`|`425`      |  文字区域上边 `y` 坐标位置
-`textBaseMapLeftPosition`| -        |  文字最左边的限制，文字不能在此坐标左侧
+`textBaseMapLeftPosition`| `-`      |  文字最左边的限制，文字不能在此坐标左侧
 `fontAttenuation`       | `2`       |  文字字号衰减的大小
-`minimumFontLimit`| `10`            |  文字的最小字号，若文字太长使得衰减小于此字号，会不出图
-`infoCoordinatesY`| -               |  文字区域每行文字的 `y` 中心坐标
+`minimumFontLimit`| `10`            |  文字的最小字号，若文字太长使得衰减小于此字号，不会出图
+`infoCoordinatesY`| `-`               |  文字区域每行文字的 `y` 中心坐标
 `infoFontSize`      | `28, 28, 25, 25`| 文字区域每行文字的初始字号
-`infoFontName`| - | 文字区域文字的字体
+`infoFontName`| `-` | 文字区域文字的字体
 
 注： `-` 表示与其他值动态相关或纯文本。
 
