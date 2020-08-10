@@ -15,6 +15,11 @@ prev: /guide/manual
 ```
 注：下载本依赖过程中需要 git 进行拉取，如果你没有安装 git ，可以下载安装 git 再安装本依赖，或者从该依赖的 [Github](https://github.com/xiyaowong/python--iotbot) 处打包下载，再用 Python 运行解压后的 `setup.py` 文件即可。
 
+若出现 `setuptools` 错误，可以尝试升级 `setuptools` 后再进行安装：
+```bash
+    pip install --upgrade --ignore-installed setuptools
+```
+
 ## 项目地址
 
 opqqq：[OPQBOT / OPQ](https://github.com/OPQBOT/OPQ)
