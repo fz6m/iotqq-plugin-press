@@ -12,5 +12,7 @@ features:
   details: 喜欢的 vtuber 带来你每天的运势
 - title: 可以爬了吗
   details: 解锁更多爬与丢的姿势（By clague）
+- title: Strings 签到
+  details: 美好一天的开始，今天也要元气满满哦（By jinserrr）
 footer: MIT Licensed | Copyright © 2020-fz6m
 ---

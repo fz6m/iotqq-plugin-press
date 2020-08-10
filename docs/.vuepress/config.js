@@ -34,7 +34,8 @@ module.exports = {
             { text: '自定义表情包', link: '/iotqq/image-custom' },
             { text: '关注早晚安', link: '/iotqq/good-morning' },
             { text: 'Vtuber 运势', link: '/iotqq/vtuber-fortune' },
-            { text: '可以爬了吗', link: '/iotqq/throw-creep' }
+            { text: '可以爬了吗', link: '/iotqq/throw-creep' },
+            { text: 'Strings 签到', link: '/iotqq/sign-in' }
           ]
         },
         { text: '其他', link: '/other/other' },

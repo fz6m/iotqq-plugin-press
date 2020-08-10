@@ -63,6 +63,16 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 ### 中断程序
 在进程中，可以使用 `ctrl+c` 中断当前进程，小白不知道怎么退出就这么按。
 
+### 清理后台程序
+当程序运行在后台时，可以采用如下命令杀掉该进程：
+```bash
+    # 找到进程 pid （大小写敏感）
+    # 例：找到 OPQBot 进程  ps aux | grep OPQ
+    ps aux | grep 命令关键词
+    # 根据 pid 杀掉进程，上一步找到的进程第一个数字即为 pid
+    kill pid
+```
+
 ## 部署机器人
 
 ### 上传运行包
