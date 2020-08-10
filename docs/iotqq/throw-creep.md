@@ -7,7 +7,7 @@ sidebar: auto
 ## 部署流程
 
 ### 安装 SDK
-确保你已经安装了基础 [SDK](/guide/guide) 。
+确保你已经安装了基础 [SDK](../guide/guide.md) 。
 
 ### 下载
 直接在 [releases](https://github.com/fz6m/opqqq-plugin/releases) 中下载该插件，亦或 clone 等方式打包下载本项目。
