@@ -60,18 +60,6 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
 ```
 注：如果因为各种原因切换失败，请自行百度寻找其他切换至 root 的方法。
 
-### 中断程序
-在进程中，可以使用 `ctrl+c` 中断当前进程，小白不知道怎么退出就这么按。
-
-### 清理后台程序
-当程序运行在后台时，可以采用如下命令杀掉该进程：
-```bash
-    # 找到进程 pid （大小写敏感）
-    # 例：找到 OPQBot 进程  ps aux | grep OPQ
-    ps aux | grep 命令关键词
-    # 根据 pid 杀掉进程，上一步找到的进程第一个数字即为 pid
-    kill pid
-```
 
 ## 部署机器人
 
@@ -142,6 +130,19 @@ wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo b
     nohup ./OPQBot &
 ```
 会在当前程序目录自动产生一个 `nohup.out` 日志文件，有关日志查看，请看后文介绍。
+
+### 中断程序
+在进程中，可以使用 `ctrl+c` 中断当前进程，小白不知道怎么退出就这么按。
+
+### 清理后台程序
+当程序运行在后台时，可以采用如下命令杀掉该进程：
+```bash
+    # 找到进程 pid （大小写敏感）
+    # 例：找到 OPQBot 进程  ps aux | grep OPQ
+    ps aux | grep 命令关键词
+    # 根据 pid 杀掉进程，上一步找到的进程第一个数字即为 pid
+    kill pid
+```
 
 ## 部署插件
 

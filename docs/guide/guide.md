@@ -26,6 +26,6 @@ opqqq：[OPQBOT / OPQ](https://github.com/OPQBOT/OPQ)
 
 python--iotbot：[xiyaowong / python--iotbot](https://github.com/xiyaowong/python--iotbot)
 
-## 从 nonebot 迁移
+## 从 nonebot-plugin 迁移
 
-本项目插件来自于 [nonebot-plugin](https://github.com/fz6m/nonebot-plugin) 插件的重构，配置完全一致，您只需将原来的配置文件放到新插件的相应资源位置即可低成本即开即用。
+如果你是 [nonebot-plugin](https://github.com/fz6m/nonebot-plugin) 的用户，本项目插件与其配置完全一致，您只需将原来的配置文件放到新插件的相应资源位置即可低成本即开即用。
