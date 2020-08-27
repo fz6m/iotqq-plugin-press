@@ -4,6 +4,8 @@ sidebar: auto
 
 # 可以爬了吗
 
+*Version: 1.2*
+
 ## 部署流程
 
 ### 安装 SDK

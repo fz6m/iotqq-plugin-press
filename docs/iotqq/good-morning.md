@@ -4,6 +4,8 @@ sidebar: auto
 
 # 关注早晚安
 
+*Version: 1.3*
+
 ## 部署流程
 
 ### 安装 SDK

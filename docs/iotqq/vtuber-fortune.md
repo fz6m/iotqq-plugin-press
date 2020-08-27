@@ -4,6 +4,8 @@ sidebar: auto
 
 # Vtuber 运势
 
+*Version: 1.2*
+
 ::: tip 提示
 使用时，请保证所有配置文件在 UTF-8 编码下保存。<br>
 若为 ANSI ，可使用 NotePad++ 编码 -> 转为 UTF-8

@@ -4,6 +4,8 @@ sidebar: auto
 
 # 自定义表情包
 
+*Version: 1.5*
+
 ::: tip 提示
 使用时，请保证所有配置文件在 UTF-8 编码下保存。<br>
 若为 ANSI ，可使用 NotePad++ 编码 -> 转为 UTF-8
@@ -121,6 +123,8 @@ sidebar: auto
     qrListOpen = True
     # 表情包字体
     fontPath = f'{RESOURCES_BASE_PATH}/font/simhei.ttf'
+    # 最小字体限制
+    fontMin = 15
 ```
 一般情况不需要修改。
 

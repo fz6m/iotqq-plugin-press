@@ -20,6 +20,15 @@ next: /guide/guide
  - jsdelivr 加速镜像仓库 [xiyaowong / iotbot--mirror](https://github.com/xiyaowong/iotbot--mirror)，会使用 jsdelivr 的可以在此处加速下载
  - 树莓派版本请自行寻找
 
+### 从旧版本升级
+请注意新版本文件夹的权限，请设定为 777 ，否则会出现部分功能不能使用的情况。
+
+宝塔面板可视化设定或执行命令：
+
+```bash
+    chmod -R 777 /dir_name
+```
+
 ## 安装管理面板
 
 ### 认识宝塔
