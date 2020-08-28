@@ -4,7 +4,7 @@ sidebar: auto
 
 # 自定义表情包
 
-*Version: 1.5*
+*Version: 1.6*
 
 ::: tip 提示
 使用时，请保证所有配置文件在 UTF-8 编码下保存。<br>
@@ -127,6 +127,14 @@ sidebar: auto
     fontMin = 15
 ```
 一般情况不需要修改。
+
+### 开启 emoji 支持
+你可以修改 `plugins/bot_image_custom.py` 文件开头的 `fontPath` 为如下：
+```python
+    # 表情包字体
+    fontPath = f'{RESOURCES_BASE_PATH}/font/simhei-emoji.ttf'
+```
+该字体支持 emoji ，但会引发中文字体少量向下偏移。
 
 ### 屏蔽群
 当您想屏蔽哪个群时，可以在本插件内配置屏蔽使用本插件的群号，例：
