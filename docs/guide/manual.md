@@ -16,8 +16,10 @@ next: /guide/guide
 注： windows 不能使用本插件。
 
 附：
- - 最新版 opq 运行包（不一定实时更新）：[OPQBot_3.1.8_linux_amd64.tar.gz](https://files.gitter.im/5f27939ed73408ce4feb3112/QLod/OPQBot_3.1.8_linux_amd64.tar.gz)
+ - 最新版 opq 运行包（不一定实时更新）：[OPQBot_3.1.9_linux_amd64.tar.gz](https://files.gitter.im/5f27939ed73408ce4feb3112/iKlw/OPQBot_3.1.9_linux_amd64.tar.gz)
+
  - jsdelivr 加速镜像仓库 [xiyaowong / iotbot--mirror](https://github.com/xiyaowong/iotbot--mirror)，会使用 jsdelivr 的可以在此处加速下载
+
  - 树莓派版本请自行寻找
 
 ### 从旧版本升级
