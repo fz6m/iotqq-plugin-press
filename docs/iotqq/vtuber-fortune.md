@@ -4,7 +4,7 @@ sidebar: auto
 
 # Vtuber / Pcr 运势
 
-*Version: 1.3*
+*Version: 1.4*
 
 ::: tip 提示
 使用时，请保证所有配置文件在 UTF-8 编码下保存。<br>
@@ -23,9 +23,9 @@ sidebar: auto
 
 ### 版本说明
 
-本插件自 *v1.3* 开始，有 vtuber 和 pcr（プリンセスコネクト！Re：Dive） 两个版本。
+本插件自 *v1.3* 开始，有 vtuber / pcr（プリンセスコネクト！Re：Dive）/ 原神（genshin） 三个版本。
 
-自 hololive 发布敏感言论后，我们建议您使用 pcr 版本，您可以在此查看 [无损迁移](#从-vtuber-版本迁移) 方法。
+自 hololive 发布敏感言论后，我们建议您使用 pcr 或 原神 版本，您可以在此查看 [无损迁移](#从-vtuber-版本迁移) 方法。
 
 ### 安装依赖
 安装本插件依赖：
@@ -47,15 +47,17 @@ sidebar: auto
 ## 开始使用
 你可以在群内发送如下指令之一触发该插件：
 ```yml
-    # vtuber version / pcr version
+    # all version
     今日人品
     今日运势
     抽签
     人品
     运势
+
     # vtuber version
     小狐狸签
     吹雪签
+
     # pcr version
     xcw签
     炼签
@@ -63,6 +65,18 @@ sidebar: auto
     妈签
     kyaru签
     臭鼬签
+
+    # genshin version
+    可莉签
+    可丽签
+    哒哒哒签
+    刻晴签
+    卢姥爷签
+    迪卢克签
+    芭芭拉签
+    巴啦啦签
+    芭拉拉签
+    七七签
 ```
 当使用特定命令时，对应固定底图：
 
@@ -78,13 +92,26 @@ sidebar: auto
 
  - `kyaru签` / `臭鼬签` ：凯露
 
+#### genshin version
+
+ - `可莉签` / `可丽签` / `哒哒哒签` ：可莉
+
+ - `刻晴签` ：刻晴
+
+ - `卢姥爷签` / `迪卢克签` ：迪卢克
+
+ - `芭芭拉签` / `巴啦啦签` / `芭拉拉签` ：芭芭拉
+
+ - `七七签` ：七七
+
 ## 配置
 
 ### 触发命令
-你可以在 `plugins/bot_vtuber_fortune.py` / `plugins/bot_pcr_fortune.py` 的第 13 行找到如下触发指令列表：
+你可以在 `plugins/bot_vtuber_fortune.py` / `plugins/bot_pcr_fortune.py` / `plugins/bot_genshin_fortune.py` 的第 13 行找到如下触发指令列表：
 ```python
     # 触发命令列表 - vtuber version
     commandList = ['今日人品', '今日运势', '抽签', '人品', '运势', '小狐狸签', '吹雪签']
+
     # 触发命令列表 - pcr version
     commandList = [
         '今日人品', '今日运势', '抽签', '人品', '运势', 
@@ -92,10 +119,20 @@ sidebar: auto
         'xcw签', '炼签',
         'kyaru签', '臭鼬签'
     ]
+
+    # 触发命令列表 - genshin version
+    commandList = [
+        '今日人品', '今日运势', '抽签', '人品', '运势', 
+        '可莉签', '可丽签', '哒哒哒签',
+        '刻晴签',
+        '卢姥爷签', '迪卢克签',
+        '芭芭拉签', '巴啦啦签', '芭拉拉签',
+        '七七签'
+    ]
 ```
 
 ### 文案增改
-你可以在 `resources/vtuber-fortune/fortune/copywriting.json` / `resources/pcr-fortune/fortune/copywriting.json` 找到所有运势文案内容，按照其已有格式添加结构即可：
+你可以在 `resources/vtuber-fortune/fortune/copywriting.json` / `resources/pcr-fortune/fortune/copywriting.json` / `resources/genshin-fortune/fortune/copywriting.json` 找到所有运势文案内容，按照其已有格式添加结构即可：
 ```json
     {
         "good-luck": 10,
@@ -104,7 +141,7 @@ sidebar: auto
 ```
 其中：
 
-`good-luck` ： 吉凶度 的编号，在同文件夹的 `resources/vtuber-fortune/fortune/goodLuck.json` / `resources/pcr-fortune/fortune/goodLuck.json` 可以找到吉凶度设定，受字体限制，吉凶度是日语，请不要加入中文。
+`good-luck` ： 吉凶度 的编号，在同文件夹的 `resources/vtuber-fortune/fortune/goodLuck.json` / `resources/pcr-fortune/fortune/goodLuck.json` / `resources/genshin-fortune/fortune/goodLuck.json` 可以找到吉凶度设定，受字体限制，吉凶度是日语，请不要加入中文。
 
 `content` ：运势文案内容，最多 36 字（包括汉字、空格、字母、标点，均占 1 个字）。
 
@@ -112,7 +149,7 @@ sidebar: auto
 插件自带了 175 条运势文案，来自于 hololive 早安系列第 3.13 - 3.29 期，如果想自己添加文案却没有头绪，可以参考其他期视频添加。
 
 ### 吉凶度
-配置 吉凶度 设定的 `resources/vtuber-fortune/fortune/goodLuck.json` / `resources/pcr-fortune/fortune/goodLuck.json` 文件，如果需要改动，要保证新增满足如下结构：
+配置 吉凶度 设定的 `resources/vtuber-fortune/fortune/goodLuck.json` / `resources/pcr-fortune/fortune/goodLuck.json` / `resources/genshin-fortune/fortune/goodLuck.json` 文件，如果需要改动，要保证新增满足如下结构：
 ```json
     {
         "good-luck": 10,
@@ -140,6 +177,8 @@ sidebar: auto
 
 ## 从 vtuber 版本迁移
 
+### pcr version
+
  pcr 版本只对以下文件做了更新：
 
  * `plugins/bot_vtuber_fortune.py` -> `plugins/bot_pcr_fortune.py` 
@@ -156,6 +195,24 @@ sidebar: auto
 
 即可无损迁移。
 
+### genshin version
+
+ 原神 版本只对以下文件做了更新：
+
+ * `plugins/bot_vtuber_fortune.py` -> `plugins/bot_genshin_fortune.py`
+
+ * `resources/vtuber-fortune/img` -> `resources/genshin-fortune/img`
+
+从而你只需将以上的 
+
+1. `bot_vtuber_fortune.py` 替换为 `bot_genshin_fortune.py`
+
+2. `vtuber-fortune` 文件夹更名为 `genshin-fortune`
+
+3. `vtuber-fortune/img` 文件夹替换为 `genshin-fortune/img`
+
+即可
+
 ## 其他
 
 您可以安装 `ujson` 依赖以加速 json 读取的速度：
@@ -169,4 +226,6 @@ sidebar: auto
 
 ## 致谢
 
-感谢 pcr 社区的米娜桑制作的 pcr 版 fortune 静态资源。
+感谢 pcr 社区的米娜桑制作的 pcr 版本 fortune 静态资源。
+
+感谢 [@Kouseki](https://github.com/Katou-Kouseki) 制作的 原神 版本 fortune 静态资源。
