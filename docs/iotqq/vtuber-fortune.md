@@ -2,7 +2,7 @@
 sidebar: auto
 ---
 
-# Vtuber / Pcr 运势
+# Vtuber / Pcr / 原神 运势
 
 *Version: 1.4*
 
