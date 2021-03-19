@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /home.jpg
+heroImage: https://cdn.jsdelivr.net/gh/fz6m/Private-web@70.0/img/yc.jpg
 actionText: Start
 actionLink: /guide/guide
 features:
