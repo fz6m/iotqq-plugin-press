@@ -26,6 +26,10 @@ opqqq：[OPQBOT / OPQ](https://github.com/OPQBOT/OPQ)
 
 python--iotbot：[xiyaowong / python--iotbot](https://github.com/xiyaowong/python--iotbot)
 
+## 如何开发
+
+如果你具备一定的开发能力，建议您使用新版 python sdk ：[opq-osc / botoy](https://github.com/opq-osc/botoy) 开发自己的机器人功能
+
 ## 从 nonebot-plugin 迁移
 
 如果你是 [nonebot-plugin](https://github.com/fz6m/nonebot-plugin) 的用户，本项目插件与其配置完全一致，您只需将原来的配置文件放到新插件的相应资源位置即可低成本即开即用。

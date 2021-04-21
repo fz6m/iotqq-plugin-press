@@ -12,7 +12,7 @@ sidebar: auto
 确保你已经安装了基础 [SDK](../guide/guide.md) 。
 
 ### 下载
-直接在 [releases](https://github.com/fz6m/opqqq-plugin/releases) 中下载该插件，亦或 clone 等方式打包下载本项目。
+直接在 [releases](https://github.com/opq-osc/opqqq-plugin/releases) 中下载该插件，亦或 clone 等方式打包下载本项目。
 
 注：如果你通过 releases 下载，下载得到的是独立的插件，如果你想使用多个插件，为减少将文件混合在一起的成本，建议打包下载整个项目。
 

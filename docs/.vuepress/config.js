@@ -39,7 +39,8 @@ module.exports = {
           ]
         },
         { text: '其他', link: '/other/other' },
-        { text: 'GitHub', link: 'https://github.com/fz6m/opqqq-plugin' }
+        { text: '加入我们', link: '/other/join' },
+        { text: 'GitHub', link: 'https://github.com/opq-osc/opqqq-plugin' }
       ],
       lastUpdated: '上次更新',
       smoothScroll: true,
