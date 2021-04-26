@@ -4,7 +4,7 @@ sidebar: auto
 
 # 关注早晚安
 
-*Version: 1.3*
+*Version: 1.4*
 
 ## 部署流程
 
@@ -27,9 +27,19 @@ sidebar: auto
 ```
 
 ### 添加账号
-在下载的 `bot.py` 主程序内，你需要修改 `bot_qq` 为自己的机器人账号：
-```python
-    bot_qq = 12345678
+在根目录 `botoy.json` 配置文件夹内，你需要做如下配置：
+```json
+    {
+        "qq": 0, // 1. 修改为你的机器人账号
+        "host": "http://127.0.0.1",
+        "port": 8888, // 2. 修改为你机器人启动的端口，默认没有修改过的话，就是 8888
+        "group_blacklist": [],
+        "friend_blacklist": [],
+        "blocked_users": [],
+        "webhook": false,
+        "webhook_post_url": "http://127.0.0.1:5000",
+        "webhook_timeout": 20
+    }
 ```
 
 ## 开始使用
