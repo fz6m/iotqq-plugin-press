@@ -10,6 +10,13 @@ module.exports = {
           rel: 'icon',
           href: '/logo.png'
         }
+      ],
+      [
+        'link',
+        {
+          rel: 'stylesheet',
+          href: 'https://cdn.jsdelivr.net/npm/react-toastify@7.0.3/dist/ReactToastify.min.css'
+        }
       ]
     ],
     plugins: [

@@ -20,7 +20,7 @@ opqqq：[OPQBOT / OPQ](https://github.com/OPQBOT/OPQ)
 
 botoy：[opq-osc / botoy](https://github.com/opq-osc/botoy)
 
-### 从 python--iotbot 升级
+### 从旧版 sdk 升级
 
 我们于 ***2021.04.27*** 从旧版 python 开发 sdk [xiyaowong / python--iotbot](https://github.com/xiyaowong/python--iotbot) 升级为 [opq-osc / botoy](https://github.com/opq-osc/botoy)。
 
