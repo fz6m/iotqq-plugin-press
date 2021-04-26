@@ -62,16 +62,12 @@ sidebar: auto
 单位：小时
 
 ```python
-# Line 360
 # 早安后 4 小时内不能晚安
 if sleepingTime <= 4:
-# Line 420
 # 晚安后 4 小时内不能早安
 if soberTime <= 4:
-# Line 365
 # 睡眠时间小于 24 小时，才会统计睡眠时间
 if sleepingTime < 24:
-# Line 425
 # 工作时间小于 24 小时，才会统计工作时间
 if soberTime < 24:
 ```

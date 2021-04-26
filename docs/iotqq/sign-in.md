@@ -57,7 +57,7 @@ sidebar: auto
 
 ## 配置
 ### 触发命令
-你可以在 `plugins/bot_sign_in.py` 的第 9 行找到如下触发指令列表：
+你可以在 `plugins/bot_sign_in.py` 找到如下触发指令列表：
 ```python
     # 触发命令列表
     # 例：['签到', '早']
@@ -71,7 +71,7 @@ sidebar: auto
 为防止网络问题或一言网站倒闭，历史获取到的一言均会存档于 `resources/sign-in/hitokoto/cache/archive.json` 以备出现问题时自动调档。
 
 #### 一言开关
-你可以在 `plugins/bot_sign_in.py` 的第 15 行找到一言开关：
+你可以在 `plugins/bot_sign_in.py` 找到一言开关：
 ```python
     # 是否打开一言，若不打开，默认显示 noHitokoto
     hitokotoOpen = True
@@ -79,7 +79,7 @@ sidebar: auto
 当网络存在问题或一言网站倒闭时，你可以关闭一言。
 
 #### 一言屏蔽
-你可以在 `plugins/bot_sign_in.py` 的第 19 行找到一言屏蔽列表：
+你可以在 `plugins/bot_sign_in.py` 找到一言屏蔽列表：
 ```python
     # 一言黑名单，含有该内容即重新获取
     hitokotoBlacklist = ['历史的发展', '没有调查']
@@ -89,7 +89,7 @@ sidebar: auto
 你可以借此屏蔽掉政治色彩强烈的一言，给予群友更好的体验。
 
 #### 默认一言
-你可以在 `plugins/bot_sign_in.py` 的第 17 行找到默认一言：
+你可以在 `plugins/bot_sign_in.py` 找到默认一言：
 ```python
     noHitokoto = '今天也要元气满满哦~'
 ```
@@ -101,7 +101,7 @@ sidebar: auto
 
 ### 出图设定
 #### 出图质量
-你可以在 `plugins/bot_sign_in.py` 的第 13 行找到出图质量设定：
+你可以在 `plugins/bot_sign_in.py` 找到出图质量设定：
 ```python
     highQuality = True
 ```
@@ -109,7 +109,7 @@ sidebar: auto
  * `False` ：`jpg` 格式出图，单张在 100 KB 以内，少许模糊，并丢失 A 通道透明度 `190` 的效果。
 
 #### 出图参数
-你可以在 `plugins/bot_sign_in.py` 的第 275-299 行找到出图参数设定，一般情况下，你不需要改动他们。
+你可以在 `plugins/bot_sign_in.py` 找到出图参数设定，一般情况下，你不需要改动他们。
 
 参数|默认值|说明
 :-:|:-:|:-

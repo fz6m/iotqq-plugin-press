@@ -60,7 +60,7 @@ sidebar: auto
 
 ## 配置
 ### 触发命令
-你可以在 `plugins/bot_throw_creep.py` 的第 13-14 行找到如下触发指令列表：
+你可以在 `plugins/bot_throw_creep.py` 找到如下触发指令列表：
 ```python
     # 触发命令列表
     creepCommandList = ['爬', '爪巴', '给爷爬', '爬啊', '快爬']
@@ -74,7 +74,7 @@ sidebar: auto
 你可以对相应的指令列表进行增删修改。
 
 ### 爬的概率
-你可以在 `plugins/bot_throw_creep.py` 的第 16 行找到爬的概率：
+你可以在 `plugins/bot_throw_creep.py` 找到爬的概率：
 ```python
     # 爬的概率 越大越容易爬 取值区间 [0, 100]
     creep_limit = 80

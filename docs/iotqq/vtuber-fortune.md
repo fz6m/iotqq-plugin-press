@@ -117,7 +117,7 @@ sidebar: auto
 ## 配置
 
 ### 触发命令
-你可以在 `plugins/bot_vtuber_fortune.py` / `plugins/bot_pcr_fortune.py` / `plugins/bot_genshin_fortune.py` 的第 13 行找到如下触发指令列表：
+你可以在 `plugins/bot_vtuber_fortune.py` / `plugins/bot_pcr_fortune.py` / `plugins/bot_genshin_fortune.py` 找到如下触发指令列表：
 ```python
     # 触发命令列表 - vtuber version
     commandList = ['今日人品', '今日运势', '抽签', '人品', '运势', '小狐狸签', '吹雪签']

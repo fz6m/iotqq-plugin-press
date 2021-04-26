@@ -168,7 +168,7 @@ sidebar: auto
 ### `resources/font` 文件夹
 在 linux 系统上没有中文字体，为减少安装成本，将使用我们自己提供的字体文件（默认为 `resources/font/simhei.ttf` 即黑体）。
 
-您也可以在 `plugins/bot_image_custom.py` 内的第 `16` 行修改该字体：
+您也可以在 `plugins/bot_image_custom.py` 内修改该字体：
 ```python
 # 表情包字体
     fontPath = f'{RESOURCES_BASE_PATH}/font/simhei.ttf'
