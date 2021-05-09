@@ -14,6 +14,8 @@ features:
   details: 解锁更多爬与丢的姿势（By clague）
 - title: Strings 签到
   details: 美好一天的开始，今天也要元气满满哦（By jinserrr）
+- title: 5000 兆元字体生成器
+  details: 生成具有冲击力的图片（ beta 测试 ）
 footer: MIT Licensed | Copyright © 2020-opq-osc
 ---
 

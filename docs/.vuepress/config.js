@@ -42,7 +42,8 @@ module.exports = {
             { text: '关注早晚安', link: '/iotqq/good-morning' },
             { text: 'Vtuber / Pcr / 原神 运势', link: '/iotqq/vtuber-fortune' },
             { text: '可以爬了吗', link: '/iotqq/throw-creep' },
-            { text: 'Strings 签到', link: '/iotqq/sign-in' }
+            { text: 'Strings 签到', link: '/iotqq/sign-in' },
+            { text: '5000 兆元字体生成器', link: '/iotqq/5000-choyen' }
           ]
         },
         { text: '其他', link: '/other/other' },
